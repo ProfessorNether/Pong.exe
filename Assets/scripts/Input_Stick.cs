@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEngine.RuleTile.TilingRuleOutput;
 
 public class Input_Stick : MonoBehaviour
 {
@@ -13,38 +14,35 @@ public class Input_Stick : MonoBehaviour
       
         
     }
-
+    // transform.position.y > 
     //stick movements
     void Update()
     {
         if (leftOrRight == "Left")
-        {
-            if (Input.GetKey(KeyCode.S))
+        { 
+            if (Input.GetKey(KeyCode.S) && (transform.position.y < 4))
             {
-                Debug.Log("S is Pressed");
+               
                 transform.Translate(Vector3.up * speed * Time.deltaTime);
             }
-            else if (Input.GetKey(KeyCode.W))
+            else if (Input.GetKey(KeyCode.W) && (transform.position.y > -4))
             {
-                Debug.Log("W is Pressed");
+                
                 transform.Translate(Vector3.down * speed * Time.deltaTime);
             }
         }
 
         else if (leftOrRight == "Right")
         {
-            if (Input.GetKey(KeyCode.DownArrow))
+            if (Input.GetKey(KeyCode.DownArrow) && (transform.position.y < 4))
             {
-                Debug.Log("downarrow is pressed");
-                transform.Translate(Vector3.up * speed * Time.deltaTime);
+             transform.Translate(Vector3.up * speed * Time.deltaTime);
             }
-            else if (Input.GetKey(KeyCode.UpArrow))
+
+            else if (Input.GetKey(KeyCode.UpArrow) && (transform.position.y > -4))
             {
-                Debug.Log("uparrow is Pressed");
                 transform.Translate(Vector3.down * speed * Time.deltaTime);
             }
         }
-
-
     }
 }

@@ -9,16 +9,16 @@ public class Ball_Script : MonoBehaviour
     public float xSpeed;
     public float ySpeed;
 
-    // Start is called before the first frame update
+    // setting speed
     void Start()
     {
         transform.position= new Vector3(Xposition, Yposition, 0);
-        xSpeed = 2f;
-        ySpeed = 2f;
+        xSpeed = 5f;
+        ySpeed = 5f;
 
     }
 
-    // Update is called once per frame
+    // Speed Fix
     void Update()
     {
         Xposition += xSpeed * Time.deltaTime;
@@ -28,6 +28,7 @@ public class Ball_Script : MonoBehaviour
 
     }
 
+    //to do on impact
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("HorizontalWall"))
@@ -36,7 +37,7 @@ public class Ball_Script : MonoBehaviour
             Debug.Log("Touched horizontal wall");
         }
 
-        if (collision.gameObject.CompareTag("VerticalWall"))
+        if (collision.gameObject.CompareTag("VerticalWall") || collision.gameObject.CompareTag("Stick"))
         {
             xSpeed = xSpeed * -1;
             Debug.Log("Touched vertical wall");
