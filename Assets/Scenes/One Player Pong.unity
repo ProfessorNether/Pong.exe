@@ -752,6 +752,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b836d2fcaa95774dadf7576907a8329, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ySpeed: 7
+  yPosition: 0
+  ball: {fileID: 1449388829}
 --- !u!1 &983545457
 GameObject:
   m_ObjectHideFlags: 0
@@ -963,7 +966,6 @@ GameObject:
   - component: {fileID: 1449388830}
   - component: {fileID: 1449388834}
   - component: {fileID: 1449388833}
-  - component: {fileID: 1449388835}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Untagged
@@ -1128,24 +1130,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &1449388835
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1449388829}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b2eedeb7e8f88643b8f7d49024108f9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Xposition: 0
-  Yposition: 0
-  xSpeed: 0
-  ySpeed: 0
-  scoreField: {fileID: 0}
-  topScore: 10
 --- !u!1 &1576658879
 GameObject:
   m_ObjectHideFlags: 0
