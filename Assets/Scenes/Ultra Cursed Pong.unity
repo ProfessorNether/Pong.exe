@@ -619,15 +619,29 @@ GameObject:
   m_Component:
   - component: {fileID: 544763716}
   - component: {fileID: 544763715}
+  - component: {fileID: 544763714}
   - component: {fileID: 544763717}
-  - component: {fileID: 544763718}
   m_Layer: 0
-  m_Name: Stick AI
+  m_Name: Stick R
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &544763714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 544763713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8e278c84a8eee2458eacf0f7bbbaa18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 3
+  leftOrRight: Right
 --- !u!212 &544763715
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -740,21 +754,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &544763718
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 544763713}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b836d2fcaa95774dadf7576907a8329, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ySpeed: 7
-  yPosition: 0
-  ball: {fileID: 1449388829}
 --- !u!1 &983545457
 GameObject:
   m_ObjectHideFlags: 0
@@ -963,6 +962,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1449388832}
   - component: {fileID: 1449388831}
+  - component: {fileID: 1449388830}
   - component: {fileID: 1449388834}
   - component: {fileID: 1449388833}
   - component: {fileID: 1449388835}
@@ -973,6 +973,24 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1449388830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1449388829}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b2eedeb7e8f88643b8f7d49024108f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Xposition: 0
+  Yposition: 0
+  xSpeed: 0
+  ySpeed: 0
+  scoreField: {fileID: 101384742}
+  topScore: 10
 --- !u!212 &1449388831
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1119,16 +1137,16 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1449388829}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1d1f3a4c222d934ebebae878a8d2210, type: 3}
+  m_Script: {fileID: 11500000, guid: 1b2eedeb7e8f88643b8f7d49024108f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Xposition: 0
   Yposition: 0
   xSpeed: 0
   ySpeed: 0
-  scoreField: {fileID: 101384742}
+  scoreField: {fileID: 0}
   topScore: 10
 --- !u!1 &1576658879
 GameObject:
