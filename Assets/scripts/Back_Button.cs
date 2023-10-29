@@ -1,4 +1,4 @@
-#if UNITY_EDITOR_WIN
+#if UNITY_EDITOR
 using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.SearchService;
@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class Back_Button : MonoBehaviour
 {
-   public void BackButton()
+    public void BackButton()
     {
         SceneManager.LoadScene("Main Menu");
     }
