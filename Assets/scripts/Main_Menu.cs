@@ -1,3 +1,4 @@
+#if UNITY_EDITOR
 using System.Collections;
 using System.Collections.Generic;
 using System.Xml.Serialization;
@@ -31,3 +32,4 @@ public class Main_Menu : MonoBehaviour
         Application.Quit();
     }
 }
+#endif

@@ -1,3 +1,4 @@
+#if UNITY_EDITOR
 using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.SearchService;
@@ -11,3 +12,4 @@ public class Back_Button : MonoBehaviour
         SceneManager.LoadScene("Main Menu");
     }
 }
+#endif
