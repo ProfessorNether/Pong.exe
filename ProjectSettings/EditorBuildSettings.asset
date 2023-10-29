@@ -6,6 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Main Menu.unity
+    guid: 8b241d8f876fec947a726cb29d2f6500
+  - enabled: 1
     path: Assets/Scenes/2 Player Pong.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/One Player Pong.unity
+    guid: 9cc8802e8f2010e4cbc97e8ec1c6ac9d
+  - enabled: 1
+    path: Assets/Scenes/Ultra Cursed Pong.unity
+    guid: 38fd50426653c2549bf6871e26bab81d
+  - enabled: 1
+    path: Assets/Scenes/Game Info.unity
+    guid: dcd0da8f91ddfee45b3facc4f508c1fd
   m_configObjects: {}
