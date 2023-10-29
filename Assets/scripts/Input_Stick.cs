@@ -19,12 +19,14 @@ public class Input_Stick : MonoBehaviour
     void Update()
     {
         if (leftOrRight == "Left")
-        { 
+        {
+            //kleiner dan
             if (Input.GetKey(KeyCode.S) && (transform.position.y < 4))
             {
                
                 transform.Translate(Vector3.up * speed * Time.deltaTime);
             }
+            //groter dan
             else if (Input.GetKey(KeyCode.W) && (transform.position.y > -4))
             {
                 
