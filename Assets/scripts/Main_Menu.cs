@@ -1,8 +1,8 @@
-#if UNITY_EDITOR
+//#if UNITY_EDITOR_WIN
 using System.Collections;
 using System.Collections.Generic;
 using System.Xml.Serialization;
-using UnityEditor.SearchService;
+//using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -32,4 +32,4 @@ public class Main_Menu : MonoBehaviour
         Application.Quit();
     }
 }
-#endif
+//#endif

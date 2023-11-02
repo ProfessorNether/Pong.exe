@@ -1,7 +1,7 @@
-#if UNITY_EDITOR
+//#if UNITY_EDITOR_WIN
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.SearchService;
+//using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -12,4 +12,4 @@ public class Back_Button : MonoBehaviour
         SceneManager.LoadScene("Main Menu");
     }
 }
-#endif
+//#endif
